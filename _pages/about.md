@@ -11,7 +11,6 @@ p {
     text-align: justify;
 }
 </style>
-
 Introduction
 ------
 
@@ -52,6 +51,61 @@ Moreover, the evaluation of LLMs in chemistry involves several challenges:
 Previous research has shown that LLMs can be applied to specific chemistry tasks, such as predicting molecular properties or generating chemical reactions. However, these studies have been limited in scope, focusing on individual tasks rather than a comprehensive evaluation across multiple tasks.
 
 This seminar aims to fill this gap by providing a comprehensive benchmark evaluation of LLMs across a diverse set of chemistry tasks. By doing so, we hope to gain a deeper understanding of the capabilities and limitations of LLMs in the field of chemistry.
+
+The Comprehensive Benchmark
+------
+
+To systematically evaluate the capabilities of Large Language Models (LLMs) in chemistry, we developed a comprehensive benchmark that assesses their performance across eight diverse chemistry tasks. This benchmark aims to provide a holistic view of how well LLMs can understand, reason, and explain chemistry-related problems.
+https://example.com/benchmark-overview.jpg
+Figure 4: Overview of the Comprehensive Benchmark
+
+**The Eight Chemistry Tasks**
+
+1. **Name Prediction**: Translating between different chemical naming conventions, such as SMILES to IUPAC names.
+
+2. **Property Prediction**: Predicting chemical and physical properties of molecules based on their structure.
+
+3. **Yield Prediction**: Estimating the efficiency of chemical reactions.
+
+4. **Reaction Prediction**: Predicting the products of chemical reactions given reactants.
+
+5. **Retrosynthesis**: Identifying reactants needed to produce a given product.
+
+6. **Text-Based Molecule Design**: Generating new molecules based on textual descriptions.
+
+7. **Molecule Captioning**: Generating textual descriptions of molecular structures.
+
+8. **Reagents Selection**: Recommending the best reagents for a given reaction.
+
+Each task is designed to test different aspects of LLMs' capabilities, from basic understanding to complex reasoning and generation.
+
+**Datasets and Evaluation Metrics**
+
+To ensure a fair and comprehensive evaluation, we utilized widely recognized datasets such as BBBP, Tox21, PubChem, USPTO, and ChEBI. These datasets provide a rich variety of chemistry problems, ranging from molecular property prediction to reaction yield estimation.
+
+https://example.com/datasets.jpg
+Figure 5: Datasets used in the benchmark
+
+For evaluation, we employed metrics tailored to each task. For example, accuracy and F1 score were used for classification tasks like property prediction, while BLEU and exact match were used for text generation tasks like molecule captioning.
+
+**LLMs Evaluated**
+
+We evaluated five popular LLMs: GPT-4, GPT-3.5, Davinci-003, Llama, and Galactica. These models were tested in both zero-shot and few-shot in-context learning settings to understand their performance with varying levels of context.
+https://example.com/llms-evaluated.jpg
+Figure 6: LLMs evaluated in the benchmark
+
+### Benchmark Process
+
+The benchmark process involved several steps:
+
+1. **Prompt Design**: Crafting prompts that effectively guide LLMs to perform each task.
+
+2. **In-Context Learning**: Providing a few examples to help LLMs understand the task context.
+
+3. **Evaluation**: Running multiple trials to ensure reliable results, considering the randomness in LLM outputs.
+
+By following this structured approach, we aimed to provide a reliable and systematic evaluation of LLMs' capabilities in chemistry.
+
 
 
 
