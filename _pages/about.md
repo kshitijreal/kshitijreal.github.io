@@ -1,8 +1,3 @@
-<style>
-p {
-    text-align: justify;
-}
-</style>
 ---
 permalink: /
 title: "LLMs in Chemistry"
@@ -11,9 +6,12 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
+<style>
+p {
+    text-align: justify;
+}
+</style>
 # Introduction
-
 
 Large Language Models (LLMs) have revolutionized the field of natural language processing, demonstrating impressive capabilities in understanding, generating, and reasoning about text. These models have shown potential in various domains, including science, finance, and software engineering. However, their application in the field of chemistry remains underexplored. This seminar aims to delve into the capabilities of LLMs in chemistry through a comprehensive benchmark evaluation of eight practical chemistry tasks.
 
