@@ -94,7 +94,7 @@ We evaluated five popular LLMs: GPT-4, GPT-3.5, Davinci-003, Llama, and Galactic
 https://example.com/llms-evaluated.jpg
 Figure 6: LLMs evaluated in the benchmark
 
-### Benchmark Process
+## Benchmark Process
 
 The benchmark process involved several steps:
 
