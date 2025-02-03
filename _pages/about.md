@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-<div align="justify">
+
 
 Introduction
 ------
@@ -99,4 +99,3 @@ More info about configuring Academic Pages can be found in [the guide](https://a
 
 
 
-</div>
