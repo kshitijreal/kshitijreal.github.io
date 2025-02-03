@@ -7,12 +7,55 @@ redirect_from:
   - /about.html
 ---
 
+<div align="justify">
+
 Introduction
-=====
+------
 
 Large Language Models (LLMs) have revolutionized the field of natural language processing, demonstrating impressive capabilities in understanding, generating, and reasoning about text. These models have shown potential in various domains, including science, finance, and software engineering. However, their application in the field of chemistry remains underexplored. This seminar aims to delve into the capabilities of LLMs in chemistry through a comprehensive benchmark evaluation of eight practical chemistry tasks.
 
 In this blog, we will explore the potential of LLMs in advancing chemistry research and development. We will discuss the benchmarking process, the tasks evaluated, and the performance of five popular LLMs: GPT-4, GPT-3.5, Davinci-003, Llama, and Galactica. By the end of this seminar, you will gain insights into the strengths, weaknesses, and limitations of LLMs in chemistry-related tasks, as well as practical recommendations for leveraging these models in the future.
+
+Background on LLMs and Chemistry
+------
+
+Large Language Models (LLMs) have become a cornerstone in the field of natural language processing (NLP), showcasing remarkable abilities to understand, generate, and reason with text. These models, such as GPT-4 and Llama, have not only revolutionized text-based applications but have also begun to make inroads into scientific domains, including chemistry.
+https://example.com/llms-in-chemistry.jpg
+Figure 1: The intersection of LLMs and Chemistry
+
+**The Rise of LLMs**
+
+LLMs have demonstrated their prowess in a variety of tasks, from answering complex questions to generating coherent and contextually relevant text. This has led to their application in diverse fields such as healthcare, where they assist in diagnosing diseases, and in software engineering, where they help generate code. However, their potential in specialized scientific domains like chemistry has only recently started to be explored.
+
+**Chemistry: A New Frontier for LLMs**
+
+Chemistry, as a scientific discipline, involves understanding and manipulating molecules, reactions, and materials. Traditionally, this field has relied heavily on experimental methods and specialized computational tools. The advent of LLMs presents an opportunity to augment these traditional methods with powerful AI-driven solutions.
+https://example.com/chemistry-tasks.jpg
+Figure 2: Examples of chemistry tasks
+
+**Challenges in Evaluating LLMs for Chemistry**
+
+Despite the potential, evaluating LLMs for chemistry tasks is not straightforward. Chemistry tasks often require a deep understanding of molecular structures, reaction mechanisms, and chemical properties. LLMs, which are primarily trained on natural language data, may struggle with the specialized knowledge and reasoning required for these tasks.
+Moreover, the evaluation of LLMs in chemistry involves several challenges:
+
+1. **Understanding Molecular Representations**: Chemistry tasks often involve molecular structures represented in formats like SMILES (Simplified Molecular Input Line Entry System). LLMs need to accurately interpret these representations to perform tasks effectively.
+
+2. **Reasoning and Prediction**: Tasks such as predicting reaction outcomes or designing new molecules require not just understanding but also reasoning about chemical properties and reactions.
+
+3. **Data and Evaluation Metrics**: Chemistry datasets are often complex and require specialized metrics for evaluation. Ensuring that LLMs can perform well on these metrics is crucial for their practical application.
+
+**Previous Work**
+
+Previous research has shown that LLMs can be applied to specific chemistry tasks, such as predicting molecular properties or generating chemical reactions. However, these studies have been limited in scope, focusing on individual tasks rather than a comprehensive evaluation across multiple tasks.
+
+This seminar aims to fill this gap by providing a comprehensive benchmark evaluation of LLMs across a diverse set of chemistry tasks. By doing so, we hope to gain a deeper understanding of the capabilities and limitations of LLMs in the field of chemistry.
+
+
+
+
+
+
+
 
 A data-driven personal website
 ======
@@ -52,3 +95,8 @@ Example: editing a markdown file for a talk
 For more info
 ------
 More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+
+
+
+
+</div>
