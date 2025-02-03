@@ -150,6 +150,11 @@ To illustrate these findings, let's look at a few case studies:
 https://example.com/case-studies.jpg
 Figure 9: Case studies highlighting key findings
 
+## Detailed Analysis of Each Task
+
+In this section, we provide a detailed analysis of the performance of the five LLMs across each of the eight chemistry tasks. This analysis will help us understand the strengths and weaknesses of these models in specific chemistry-related problems.
+
+### Name Prediction
 
 
 
