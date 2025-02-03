@@ -6,8 +6,11 @@ redirect_from:
   - /about/
   - /about.html
 ---
-
-
+<style>
+p {
+    text-align: justify;
+}
+</style>
 
 Introduction
 ------
