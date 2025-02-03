@@ -11,7 +11,8 @@ p {
     text-align: justify;
 }
 </style>
-# Introduction
+Introduction
+------
 
 Large Language Models (LLMs) have revolutionized the field of natural language processing, demonstrating impressive capabilities in understanding, generating, and reasoning about text. These models have shown potential in various domains, including science, finance, and software engineering. However, their application in the field of chemistry remains underexplored. This seminar aims to delve into the capabilities of LLMs in chemistry through a comprehensive benchmark evaluation of eight practical chemistry tasks.
 
@@ -93,7 +94,7 @@ We evaluated five popular LLMs: GPT-4, GPT-3.5, Davinci-003, Llama, and Galactic
 https://example.com/llms-evaluated.jpg
 Figure 6: LLMs evaluated in the benchmark
 
-## Benchmark Process
+### Benchmark Process
 
 The benchmark process involved several steps:
 
@@ -104,6 +105,61 @@ The benchmark process involved several steps:
 3. **Evaluation**: Running multiple trials to ensure reliable results, considering the randomness in LLM outputs.
 
 By following this structured approach, we aimed to provide a reliable and systematic evaluation of LLMs' capabilities in chemistry.
+
+## Evaluation of LLMs
+
+In this section, we delve into the performance of the five Large Language Models (LLMs) evaluated in our comprehensive benchmark. The models—GPT-4, GPT-3.5, Davinci-003, Llama, and Galactica—were tested across eight chemistry tasks in both zero-shot and few-shot in-context learning settings. Our goal was to understand their capabilities and limitations in the context of practical chemistry problems.
+https://example.com/evaluation-overview.jpg
+Figure 7: Overview of the Evaluation Process
+
+### Zero-Shot vs. Few-Shot In-Context Learning
+
+Zero-shot learning involves evaluating the LLMs without providing any examples, relying solely on their pre-trained knowledge. In contrast, few-shot in-context learning provides a few examples to help the models understand the task context. This approach mimics real-world scenarios where models might have limited data but need to perform effectively.
+
+### Performance Metrics
+
+We used a variety of metrics to evaluate the models, tailored to each task. For classification tasks like property prediction, we used accuracy and F1 score. For text generation tasks like molecule captioning, we used BLEU, exact match, and other natural language processing metrics. These metrics helped us assess both the qualitative and quantitative performance of the LLMs.
+https://example.com/performance-metrics.jpg
+Figure 8: Metrics used for evaluation
+
+### Key Findings
+
+1. **Overall Performance**: GPT-4 consistently outperformed the other models across most tasks. This suggests that more advanced LLMs can better handle the complexities of chemistry tasks.
+
+2. **Task-Specific Insights**:
+   - **Name Prediction**: LLMs struggled with translating between different chemical naming conventions, indicating a need for better understanding of molecular representations.
+   - **Property Prediction**: GPT models showed strong performance, especially when property labels were included in the prompts.
+   - **Yield Prediction**: While GPT-4 performed well, it still lagged behind specialized models like UAGNN, highlighting areas for improvement.
+   - **Reaction Prediction and Retrosynthesis**: These tasks, which require deep understanding of chemical reactions, were challenging for LLMs, with performance significantly lower than specialized models.
+   - **Text-Based Molecule Design and Molecule Captioning**: GPT models demonstrated strong capabilities, generating chemically valid molecules and accurate descriptions, though exact matches were lower.
+
+3. **Impact of In-Context Learning**: Providing a few examples significantly improved the performance of LLMs, especially in tasks requiring complex reasoning. This highlights the importance of context in enhancing model performance.
+
+4. **Limitations**: Despite their capabilities, LLMs exhibited limitations in understanding molecular SMILES strings and generating accurate chemical reactions. This suggests that while LLMs can provide valuable insights, they may not yet replace specialized chemistry tools.
+
+### Case Studies
+
+To illustrate these findings, let's look at a few case studies:
+
+1. **Property Prediction**: In the HIV dataset, GPT-4 achieved an F1 score of 0.977 and an accuracy of 0.986 when property labels were included in the prompts. Removing these labels significantly dropped the performance, highlighting the importance of context.
+
+2. **Reaction Prediction**: In the USPTO-MIT dataset, GPT-4's top-1 accuracy was 0.230, significantly lower than the baseline Chemformer’s 0.938. This indicates that LLMs currently struggle with the intricacies of chemical reactions.
+
+3. **Molecule Captioning**: GPT-4 generated captions with a BLEU-4 score of 0.365, outperforming the baseline MolT5-Large. However, the exact match was only 0.174, suggesting that while the captions were chemically valid, they were not always identical to the ground truth.
+
+https://example.com/case-studies.jpg
+Figure 9: Case studies highlighting key findings
+
+
+
+
+
+
+
+
+
+
+
 
 
 
