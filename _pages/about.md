@@ -179,6 +179,8 @@ In this section, we provide a detailed analysis of the performance of the five L
 - Expected output: IUPAC name "ethyl 2-acetyl-3-aminobut-2-enoate"
 - GPT-4 output: "ethyl 2-methyl-5-oxo-2-azahept-4-en-3-oate"
 
+![Performance Chart](C:\Users\KSHPATI\Desktop\Seminar\kshitijreal.github.io\images\name_prediction.png "Comparison of different LLMs on Name Prediction accuracy")
+
 
 
 
