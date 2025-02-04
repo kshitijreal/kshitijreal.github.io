@@ -208,13 +208,35 @@ In this section, we provide a detailed analysis of the performance of the five L
 
 ![Performance Chart](_pages\images\property_prediction.png "Comparison of different LLMs on Property Prediction accuracy")
 
+### Yield Prediction
 
+**Task Description**: Yield prediction involves estimating the efficiency of chemical reactions, typically formulated as a binary classification problem (high yield or not).
 
+**Results:**
 
+| Method                     | Buchwald-Hartwig Accuracy (↑) | Suzuki-Coupling Accuracy (↑) |
+|----------------------------|-------------------------------|------------------------------|
+| UAGNN [34]                | 0.965                         | 0.957                        |
+| GPT-4 (zero-shot)          | 0.322 ± 0.034                | 0.214 ± 0.019               |
+| GPT-4 (random, k=8)        | 0.800 ± 0.008                | 0.764 ± 0.013               |
+| GPT-4 (random, k=4)        | 0.574 ± 0.045                | 0.324 ± 0.018               |
+| GPT-3.5 (random, k=8)      | 0.585 ± 0.045                | 0.542 ± 0.011               |
+| Davinci-003 (random, k=8)  | 0.467 ± 0.013                | 0.341 ± 0.017               |
+| Llama2-13B-chat            | 0.008 ± 0.007                | 0.006 ± 0.004               |
+| GAL-30B                    | 0                            | 0.008 ± 0.010               |
 
+**Observations:**
 
+- GPT-4 performed well but still lagged behind specialized models like UAGNN, which achieved an accuracy of 0.965 on Buchwald-Hartwig and 0.957 on Suzuki-Miyaura.
+- The performance improved with more demonstration examples in few-shot settings.
 
+**Case Studies:**
 
+- Example input: Reactants and products of a Buchwald-Hartwig reaction
+- Expected output: High yield (yes/no)
+- GPT-4 output: "High yield: yes"
+
+![Performance Chart](_pages\images\yield_prediction.png "Impact of Few-Shot Examples on Accuracy")
 
 
 
