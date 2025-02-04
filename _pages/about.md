@@ -156,8 +156,28 @@ In this section, we provide a detailed analysis of the performance of the five L
 
 ### Name Prediction
 
+**Task Description**: Name prediction involves translating between different chemical naming conventions, such as SMILES to IUPAC names, IUPAC names to SMILES, SMILES to molecular formulas, and IUPAC names to molecular formulas.
 
+**Results:**
 
+| Model             | SMILES to IUPAC | IUPAC to SMILES | SMILES to Formula | IUPAC to Formula |
+|--------------------|-----------------|-----------------|-------------------|------------------|
+| GPT-4             | 0.000           | 0.012           | 0.086            | 0.084           |
+| GPT-3.5           | 0.000           | 0.010           | 0.052            | 0.044           |
+| Davinci-003       | 0.000           | 0.000           | 0.006            | 0.018           |
+| Llama2-13B-chat   | 0.000           | 0.000           | 0.010            | 0.000           |
+| GAL-30B           | 0.000           | 0.000           | 0.000            | 0.000           |
+
+**Observations:**
+
+- LLMs struggled significantly with understanding and translating between different chemical naming conventions.
+- The complexity of SMILES strings and the need for precise understanding of molecular structures contributed to the poor performance.
+
+**Case Studies:**
+
+- Example input: SMILES string "CCOC(=O)C(C(C)=O)=C(C)N"
+- Expected output: IUPAC name "ethyl 2-acetyl-3-aminobut-2-enoate"
+- GPT-4 output: "ethyl 2-methyl-5-oxo-2-azahept-4-en-3-oate"
 
 
 
