@@ -22,7 +22,8 @@ Background on LLMs and Chemistry
 ------
 
 Large Language Models (LLMs) have become a cornerstone in the field of natural language processing (NLP), showcasing remarkable abilities to understand, generate, and reason with text. These models, such as GPT-4 and Llama, have not only revolutionized text-based applications but have also begun to make inroads into scientific domains, including chemistry.
-https://example.com/llms-in-chemistry.jpg
+
+example llms-in-chemistry.jpg
 Figure 1: The intersection of LLMs and Chemistry
 
 **The Rise of LLMs**
@@ -32,8 +33,6 @@ LLMs have demonstrated their prowess in a variety of tasks, from answering compl
 **Chemistry: A New Frontier for LLMs**
 
 Chemistry, as a scientific discipline, involves understanding and manipulating molecules, reactions, and materials. Traditionally, this field has relied heavily on experimental methods and specialized computational tools. The advent of LLMs presents an opportunity to augment these traditional methods with powerful AI-driven solutions.
-https://example.com/chemistry-tasks.jpg
-Figure 2: Examples of chemistry tasks
 
 **Challenges in Evaluating LLMs for Chemistry**
 
@@ -83,16 +82,23 @@ Each task is designed to test different aspects of LLMs' capabilities, from basi
 
 To ensure a fair and comprehensive evaluation, we utilized widely recognized datasets such as BBBP, Tox21, PubChem, USPTO, and ChEBI. These datasets provide a rich variety of chemistry problems, ranging from molecular property prediction to reaction yield estimation.
 
-https://example.com/datasets.jpg
-Figure 5: Datasets used in the benchmark
+| Ability       | Task                          | Task Type        | Dataset                                              | #ICL candidates     | #test | Evaluation Metrics           |
+|---------------|-------------------------------|------------------|-----------------------------------------------------|---------------------|-------|------------------------------|
+| **Understanding** | Name Prediction                | Generation       | PubChem                                             | 500                 | 100   | Accuracy                     |
+|               | Property Prediction            | Classification   | BBBP, HIV, BACE, Tox21, ClinTox                    | 2053, 41127, 1514, 8014, 1484 | 100   | Accuracy, F1 score           |
+| **Reasoning**     | Yield Prediction               | Classification   | Buchwald-Hartwig, Suzuki-Miyaura                   | 3957, 5650          | 100   | Accuracy                     |
+|               | Reaction Prediction            | Generation       | USPTO-Mixed                                        | 409035              | 100   | Accuracy, Validity           |
+|               | Reagents Selection             | Ranking          | Suzuki-Miyaura                                     | 5760                | 100   | Accuracy                     |
+|               | Retrosynthesis                 | Generation       | USPTO-50k                                          | 40029               | 100   | Accuracy, Validity           |
+|               | Text-Based Molecule Design     | Generation       | ChEBI-20                                           | 26407               | 100   | BLEU, Exact Match, etc.      |
+| **Explaining**    | Molecule Captioning            | Generation       | ChEBI-20                                           | 26407               | 100   | BLEU, Chemists, etc.         |
+
 
 For evaluation, we employed metrics tailored to each task. For example, accuracy and F1 score were used for classification tasks like property prediction, while BLEU and exact match were used for text generation tasks like molecule captioning.
 
 **LLMs Evaluated**
 
 We evaluated five popular LLMs: GPT-4, GPT-3.5, Davinci-003, Llama, and Galactica. These models were tested in both zero-shot and few-shot in-context learning settings to understand their performance with varying levels of context.
-https://example.com/llms-evaluated.jpg
-Figure 6: LLMs evaluated in the benchmark
 
 ### Benchmark Process
 
@@ -109,8 +115,9 @@ By following this structured approach, we aimed to provide a reliable and system
 ## Evaluation of LLMs
 
 In this section, we delve into the performance of the five Large Language Models (LLMs) evaluated in our comprehensive benchmark. The models—GPT-4, GPT-3.5, Davinci-003, Llama, and Galactica—were tested across eight chemistry tasks in both zero-shot and few-shot in-context learning settings. Our goal was to understand their capabilities and limitations in the context of practical chemistry problems.
-https://example.com/evaluation-overview.jpg
-Figure 7: Overview of the Evaluation Process
+
+![Evaluation overview](_pages\images\eval_overview.png "Overview of the evaluation process")
+Overview of the Evaluation Process
 
 ### Zero-Shot vs. Few-Shot In-Context Learning
 
@@ -119,8 +126,6 @@ Zero-shot learning involves evaluating the LLMs without providing any examples, 
 ### Performance Metrics
 
 We used a variety of metrics to evaluate the models, tailored to each task. For classification tasks like property prediction, we used accuracy and F1 score. For text generation tasks like molecule captioning, we used BLEU, exact match, and other natural language processing metrics. These metrics helped us assess both the qualitative and quantitative performance of the LLMs.
-https://example.com/performance-metrics.jpg
-Figure 8: Metrics used for evaluation
 
 ### Key Findings
 
