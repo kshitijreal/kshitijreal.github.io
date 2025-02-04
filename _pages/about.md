@@ -181,8 +181,32 @@ In this section, we provide a detailed analysis of the performance of the five L
 
 ![Performance Chart](_pages\images\name_prediction.png "Comparison of different LLMs on Name Prediction accuracy")
 
+### Property Prediction
 
+**Task Description**: Property prediction involves predicting chemical and physical properties of molecules based on their structure. We used datasets like BBBP, HIV, BACE, Tox21, and ClinTox.
 
+**Results:**
+
+| Model              | BBBP F1 Score | BACE F1 Score | HIV F1 Score | Tox21 F1 Score | ClinTox F1 Score |
+|---------------------|---------------|---------------|--------------|----------------|------------------|
+| GPT-4              | 0.587         | 0.666         | 0.797        | 0.563          | 0.736            |
+| GPT-3.5            | 0.463         | 0.406         | 0.807        | 0.529          | 0.369            |
+| Davinci-003        | 0.378         | 0.649         | 0.832        | 0.518          | 0.850            |
+| Llama2-13B-chat    | 0.002         | 0.045         | 0.069        | 0.047          | 0.001            |
+| GAL-30B            | 0.074         | 0.025         | 0.014        | 0.077          | 0.081            |
+
+**Observations:**
+
+- GPT-4 outperformed other models, especially when property labels were included in the prompts.
+- The inclusion of property labels significantly improved performance, indicating the importance of context.
+
+**Case Studies:**
+
+- Example input: SMILES string "CCOC(=O)C(C(C)=O)=C(C)N"
+- Expected output: Property prediction (e.g., inhibits HIV replication: yes/no)
+- GPT-4 output: "Inhibits HIV replication: yes"
+
+![Performance Chart](_pages\images\property_prediction.png "Comparison of different LLMs on Property Prediction accuracy")
 
 
 
