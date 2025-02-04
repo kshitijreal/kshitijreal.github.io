@@ -137,19 +137,6 @@ Figure 8: Metrics used for evaluation
 
 4. **Limitations**: Despite their capabilities, LLMs exhibited limitations in understanding molecular SMILES strings and generating accurate chemical reactions. This suggests that while LLMs can provide valuable insights, they may not yet replace specialized chemistry tools.
 
-### Case Studies
-
-To illustrate these findings, let's look at a few case studies:
-
-1. **Property Prediction**: In the HIV dataset, GPT-4 achieved an F1 score of 0.977 and an accuracy of 0.986 when property labels were included in the prompts. Removing these labels significantly dropped the performance, highlighting the importance of context.
-
-2. **Reaction Prediction**: In the USPTO-MIT dataset, GPT-4's top-1 accuracy was 0.230, significantly lower than the baseline Chemformer’s 0.938. This indicates that LLMs currently struggle with the intricacies of chemical reactions.
-
-3. **Molecule Captioning**: GPT-4 generated captions with a BLEU-4 score of 0.365, outperforming the baseline MolT5-Large. However, the exact match was only 0.174, suggesting that while the captions were chemically valid, they were not always identical to the ground truth.
-
-https://example.com/case-studies.jpg
-Figure 9: Case studies highlighting key findings
-
 ## Detailed Analysis of Each Task
 
 In this section, we provide a detailed analysis of the performance of the five LLMs across each of the eight chemistry tasks. This analysis will help us understand the strengths and weaknesses of these models in specific chemistry-related problems.
@@ -367,6 +354,43 @@ In this section, we provide a detailed analysis of the performance of the five L
 
 ![Heatmap of Reagents Selection](_pages\images\reagent_selection.png "Selection accuracy across models")
 
+### Discussion and Insights
+
+In this section, we delve into the broader implications of our findings, discuss the limitations of current LLMs in chemistry tasks, and explore potential avenues for future research and development.
+
+**Limitations of LLMs in Understanding Molecular SMILES**
+
+One of the most significant limitations of LLMs in chemistry is their struggle with understanding molecular representations in SMILES strings. SMILES (Simplified Molecular Input Line Entry System) is a widely used textual representation for chemical structures. However, LLMs often fail to accurately interpret these strings due to several reasons:
+
+1. Implicit Hydrogen Atoms: Hydrogen atoms are not explicitly represented in SMILES strings, which can lead to confusion for LLMs.
+
+2. Multiple Valid Representations: A single molecule can have multiple valid SMILES representations, leading to ambiguity.
+
+3. Tokenization Issues: LLMs treat SMILES strings as sequences of characters or subwords, which can break the molecular structure and properties.
+
+These limitations are evident in tasks requiring precise understanding and generation of SMILES strings, such as reaction prediction, retrosynthesis, and name prediction. For example, GPT models often fail to correctly translate between SMILES and IUPAC names, as seen in the name prediction task.
+
+**Impact of In-Context Learning**
+
+Our experiments highlight the significant impact of in-context learning (ICL) on the performance of LLMs. Providing a few examples as context can significantly enhance the models' ability to perform chemistry tasks. For instance, in the property prediction task, GPT-4 achieved an F1 score of 0.797 on the HIV dataset when provided with context, compared to 0.977 without context.
+
+The quality and quantity of ICL examples play a crucial role in improving performance. Using scaffold similarity to retrieve the most relevant examples often outperforms random sampling. Additionally, increasing the number of ICL examples generally leads to better results, as seen in the yield prediction task.
+
+**Ethical Considerations and Potential Misuse**
+
+The potential for LLMs to generate chemically valid molecules raises ethical concerns. While advancements in AI-enabled chemistry can lead to groundbreaking discoveries, they can also be misused to create hazardous substances. It is crucial to establish robust safeguards and ethical guidelines to prevent harmful applications.
+
+**Broader Impacts and Future Work**
+
+Our comprehensive benchmark provides valuable insights into the capabilities and limitations of LLMs in chemistry. The findings suggest that while LLMs can perform competitively in some tasks, they still lag behind specialized models in others. Future research should focus on improving LLMs' understanding of molecular structures and developing more effective in-context learning strategies.
+
+Additionally, there is a need for more chemistry-specific evaluation metrics that can accurately assess the performance of LLMs in generating and understanding chemical structures. Collaborative efforts between AI researchers and chemists will be essential in advancing the application of LLMs in chemistry.
+
+### Final Thoughts
+
+In this exploration of Large Language Models (LLMs) in chemistry, we've uncovered both potential and limitations. LLMs, particularly GPT-4, have shown promise in tasks like property prediction and molecule captioning, where their language generation capabilities shine. However, they struggle with tasks requiring deep molecular understanding, such as reaction prediction and retrosynthesis. This highlights the need for enhanced molecular representation handling and more chemistry-specific training. The significant boost in performance from in-context learning underscores the importance of context in complex tasks. Ethical considerations around the potential misuse of these models to generate harmful substances also demand robust safeguards.
+
+Moving forward, improving LLMs' grasp of molecular structures and refining in-context learning strategies are crucial steps. Developing custom evaluation metrics tailored to chemistry tasks will provide more accurate assessments of these models' capabilities. Continued collaboration between AI researchers and chemists will be essential in driving advancements and ensuring that LLMs can effectively contribute to the field of chemistry. While challenges remain, the potential for LLMs to accelerate research and development in chemistry is undeniable, and with further refinement, they could become powerful tools in the chemist's arsenal.
 
 
 
