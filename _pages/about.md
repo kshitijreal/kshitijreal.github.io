@@ -397,6 +397,12 @@ In this exploration of Large Language Models (LLMs) in chemistry, we've uncovere
 
 Moving forward, improving LLMs' grasp of molecular structures and refining in-context learning strategies are crucial steps. Developing custom evaluation metrics tailored to chemistry tasks will provide more accurate assessments of these models' capabilities. Continued collaboration between AI researchers and chemists will be essential in driving advancements and ensuring that LLMs can effectively contribute to the field of chemistry. While challenges remain, the potential for LLMs to accelerate research and development in chemistry is undeniable, and with further refinement, they could become powerful tools in the chemist's arsenal.
 
+### References
+
+1. Guo, Taicheng, et al. "What can large language models do in chemistry? A comprehensive benchmark on eight tasks." *Advances in Neural Information Processing Systems*, vol. 36, 2023, pp. 59662-59688.
+
+
+![Heatmap of Reagents Selection](_pages\images\reagent_selection.png "Selection accuracy across models")
 
 
 
