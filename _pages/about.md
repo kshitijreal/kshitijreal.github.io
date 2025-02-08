@@ -59,7 +59,7 @@ To systematically evaluate the capabilities of Large Language Models (LLMs) in c
 https://example.com/benchmark-overview.jpg
 Figure 4: Overview of the Comprehensive Benchmark
 
-### The Eight Chemistry Tasks
+## The Eight Chemistry Tasks
 
 1. **Name Prediction**: Translating between different chemical naming conventions, such as SMILES to IUPAC names.
 
@@ -79,7 +79,7 @@ Figure 4: Overview of the Comprehensive Benchmark
 
 Each task is designed to test different aspects of LLMs' capabilities, from basic understanding to complex reasoning and generation.
 
-**Datasets and Evaluation Metrics**
+## Datasets and Evaluation Metrics
 
 To ensure a fair and comprehensive evaluation, widely recognized datasets such as BBBP, Tox21, PubChem, USPTO, and ChEBI were utilized. These datasets provide a rich variety of chemistry problems, ranging from molecular property prediction to reaction yield estimation.
 
@@ -97,7 +97,7 @@ To ensure a fair and comprehensive evaluation, widely recognized datasets such a
 
 For evaluation, metrics tailored to each task were employed. For example, accuracy and F1 score were used for classification tasks like property prediction, while BLEU and exact match were used for text generation tasks like molecule captioning.
 
-**LLMs Evaluated**
+## LLMs Evaluated
 
 Five popular LLMs were evaluated: GPT-4, GPT-3.5, Davinci-003, Llama, and Galactica. These models were tested in both zero-shot and few-shot in-context learning settings to understand their performance with varying levels of context.
 
@@ -113,22 +113,22 @@ The benchmark process involved several steps:
 
 This structured approach was designed to provide a reliable and systematic evaluation of LLMs’ capabilities in chemistry.
 
-## Evaluation of LLMs
+# Evaluation of LLMs
 
 This section delves into the performance of five Large Language Models (LLMs) evaluated in the comprehensive benchmark. The models—GPT-4, GPT-3.5, Davinci-003, Llama, and Galactica—were tested across eight chemistry tasks in both zero-shot and few-shot in-context learning settings. The goal was to understand their capabilities and limitations in the context of practical chemistry problems.
 
 ![Evaluation overview](_pages\images\eval_overview.png "Overview of the evaluation process")
 Overview of the Evaluation Process
 
-### Zero-Shot vs. Few-Shot In-Context Learning
+## Zero-Shot vs. Few-Shot In-Context Learning
 
 Zero-shot learning involves evaluating the LLMs without providing any examples, relying solely on their pre-trained knowledge. In contrast, few-shot in-context learning provides a few examples to help the models understand the task context. This approach mimics real-world scenarios where models might have limited data but need to perform effectively.
 
-### Performance Metrics
+## Performance Metrics
 
 A variety of metrics were used to evaluate the models, tailored to each task. For classification tasks like property prediction, accuracy and F1 score were used. For text generation tasks like molecule captioning, BLEU, exact match, and other natural language processing metrics were applied. These metrics helped assess both the qualitative and quantitative performance of the LLMs.
 
-### Key Findings
+## Key Findings
 
 1. **Overall Performance**: GPT-4 consistently outperformed the other models across most tasks. This suggests that more advanced LLMs can better handle the complexities of chemistry tasks.
 
@@ -143,11 +143,11 @@ A variety of metrics were used to evaluate the models, tailored to each task. Fo
 
 4. **Limitations**: Despite their capabilities, LLMs exhibited limitations in understanding molecular SMILES strings and generating accurate chemical reactions. This suggests that while LLMs can provide valuable insights, they may not yet replace specialized chemistry tools.
 
-## Detailed Analysis of Each Task
+# Detailed Analysis of Each Task
 
 This section provides a detailed analysis of the performance of five LLMs across each of the eight chemistry tasks. This analysis helps in understanding the strengths and weaknesses of these models in specific chemistry-related problems.
 
-### Name Prediction
+## Name Prediction
 
 **Task Description**: Name prediction involves translating between different chemical naming conventions, such as SMILES to IUPAC names, IUPAC names to SMILES, SMILES to molecular formulas, and IUPAC names to molecular formulas.
 
@@ -174,7 +174,7 @@ This section provides a detailed analysis of the performance of five LLMs across
 
 ![Performance Chart](_pages\images\name_prediction.png "Comparison of different LLMs on Name Prediction accuracy")
 
-### Property Prediction
+## Property Prediction
 
 **Task Description**: Property prediction involves predicting chemical and physical properties of molecules based on their structure. Datasets like BBBP, HIV, BACE, Tox21, and ClinTox were used.
 
@@ -201,7 +201,7 @@ This section provides a detailed analysis of the performance of five LLMs across
 
 ![Performance Chart](_pages\images\property_prediction.png "Comparison of different LLMs on Property Prediction accuracy")
 
-### Yield Prediction
+## Yield Prediction
 
 **Task Description**: Yield prediction involves estimating the efficiency of chemical reactions, typically formulated as a binary classification problem (high yield or not).
 
@@ -231,7 +231,7 @@ This section provides a detailed analysis of the performance of five LLMs across
 
 ![Performance Chart](_pages\images\yield_prediction.png "Impact of Few-Shot Examples on Accuracy")
 
-### Reaction Prediction
+## Reaction Prediction
 
 **Task Description:** Reaction prediction involves predicting the products of chemical reactions given the reactants.
 
@@ -256,7 +256,7 @@ This section provides a detailed analysis of the performance of five LLMs across
 - Expected output: Products of the reaction
 - GPT-4 output: "Invalid SMILES generated"
 
-### Retrosynthesis
+## Retrosynthesis
 
 **Task Description**: Retrosynthesis involves identifying the reactants needed to produce a given product. 
 
@@ -282,7 +282,7 @@ This section provides a detailed analysis of the performance of five LLMs across
 - Expected output: Reactants needed for the reaction
 - GPT-4 output: "Invalid SMILES generated"
 
-### Text-Based Molecule Design
+## Text-Based Molecule Design
 
 **Task Description:** Text-based molecule design involves generating new molecules based on textual descriptions.
 
@@ -307,7 +307,7 @@ This section provides a detailed analysis of the performance of five LLMs across
 - Expected output: SMILES string of the generated molecule
 - GPT-4 output: "Cc1ccccc1O"
 
-### Molecule Captioning
+## Molecule Captioning
 
 **Task Description:** Molecule captioning involves generating textual descriptions of molecular structures. 
 
@@ -332,7 +332,7 @@ This section provides a detailed analysis of the performance of five LLMs across
 
 ![Example of Molecule Captioning](_pages\images\mol_cap_example.png "Examples captions generated by different models. Descriptions that violate chemical factsare marked in grey.")
 
-### Reagents Selection
+## Reagents Selection
 
 **Task Description:** Reagents selection involves recommending the best reagents for a given reaction.
 
@@ -360,11 +360,11 @@ This section provides a detailed analysis of the performance of five LLMs across
 
 ![Heatmap of Reagents Selection](_pages\images\reagent_selection.png "Selection accuracy across models")
 
-### Discussion and Insights
+# Discussion and Insights
 
 This section delves into the broader implications of the findings, discusses the limitations of current LLMs in chemistry tasks, and explores potential avenues for future research and development.
 
-**Limitations of LLMs in Understanding Molecular SMILES**
+### Limitations of LLMs in Understanding Molecular SMILES
 
 One of the most significant limitations of LLMs in chemistry is their struggle with understanding molecular representations in SMILES strings. SMILES (Simplified Molecular Input Line Entry System) is a widely used textual representation for chemical structures. However, LLMs often fail to accurately interpret these strings due to several reasons:
 
@@ -376,29 +376,29 @@ One of the most significant limitations of LLMs in chemistry is their struggle w
 
 These limitations are evident in tasks requiring precise understanding and generation of SMILES strings, such as reaction prediction, retrosynthesis, and name prediction. For example, GPT models often fail to correctly translate between SMILES and IUPAC names, as seen in the name prediction task.
 
-**Impact of In-Context Learning**
+### Impact of In-Context Learning
 
 The experiments highlight the significant impact of in-context learning (ICL) on the performance of LLMs. Providing a few examples as context can significantly enhance the models' ability to perform chemistry tasks. For instance, in the property prediction task, GPT-4 achieved an F1 score of 0.797 on the HIV dataset when provided with context, compared to 0.977 without context.
 
 The quality and quantity of ICL examples play a crucial role in improving performance. Using scaffold similarity to retrieve the most relevant examples often outperforms random sampling. Additionally, increasing the number of ICL examples generally leads to better results, as seen in the yield prediction task.
 
-**Ethical Considerations and Potential Misuse**
+### Ethical Considerations and Potential Misuse
 
 The potential for LLMs to generate chemically valid molecules raises ethical concerns. While advancements in AI-enabled chemistry can lead to groundbreaking discoveries, they can also be misused to create hazardous substances. It is crucial to establish robust safeguards and ethical guidelines to prevent harmful applications.
 
-**Broader Impacts and Future Work**
+# Broader Impacts and Future Work
 
 The comprehensive benchmark provides valuable insights into the capabilities and limitations of LLMs in chemistry. The findings suggest that while LLMs can perform competitively in some tasks, they still lag behind specialized models in others. Future research should focus on improving LLMs' understanding of molecular structures and developing more effective in-context learning strategies.
 
 Additionally, there is a need for more chemistry-specific evaluation metrics that can accurately assess the performance of LLMs in generating and understanding chemical structures. Collaborative efforts between AI researchers and chemists will be essential in advancing the application of LLMs in chemistry.
 
-### Final Thoughts
+# Final Thoughts
 
 In this exploration of Large Language Models (LLMs) in chemistry, we've uncovered both potential and limitations. LLMs, particularly GPT-4, have shown promise in tasks like property prediction and molecule captioning, where their language generation capabilities shine. However, they struggle with tasks requiring deep molecular understanding, such as reaction prediction and retrosynthesis. This highlights the need for enhanced molecular representation handling and more chemistry-specific training. The significant boost in performance from in-context learning underscores the importance of context in complex tasks. Ethical considerations around the potential misuse of these models to generate harmful substances also demand robust safeguards.
 
 Moving forward, improving LLMs' grasp of molecular structures and refining in-context learning strategies are crucial steps. Developing custom evaluation metrics tailored to chemistry tasks will provide more accurate assessments of these models' capabilities. Continued collaboration between AI researchers and chemists will be essential in driving advancements and ensuring that LLMs can effectively contribute to the field of chemistry. While challenges remain, the potential for LLMs to accelerate research and development in chemistry is undeniable, and with further refinement, they could become powerful tools in the chemist's arsenal.
 
-### References
+# References
 
 1. Guo, Taicheng, et al. "What can large language models do in chemistry? A comprehensive benchmark on eight tasks." *Advances in Neural Information Processing Systems*, vol. 36, 2023, pp. 59662-59688.
 
