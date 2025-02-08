@@ -400,13 +400,13 @@ This section provides a detailed analysis of the performance of five LLMs across
 
 This paper represents a significant step in exploring the potential of Large Language Models (LLMs) in chemistry. By benchmarking LLMs like GPT-4, GPT-3.5, and others across eight distinct chemistry tasks, the authors have provided a solid foundation for evaluating how these models perform in practical applications. However, while the study is thorough in its execution, it is essential to critically assess its broader implications, limitations, and areas for improvement.
 
-### Strengths of the Study
+## Strengths of the Study
 
 The comprehensive nature of the benchmark is one of the paper's greatest strengths. Covering tasks such as name prediction, property prediction, and retrosynthesis, the authors have successfully demonstrated where LLMs excel and where they struggle. For instance, the use of scaffold-based few-shot in-context learning (ICL) highlights how tailored prompt engineering can significantly enhance model performance, particularly in property prediction tasks.
 
 The paper also addresses ethical concerns, such as the potential misuse of LLMs to design harmful chemicals, showcasing an awareness of the broader societal implications of their research. This acknowledgment is a step toward fostering responsible AI development.
 
-### Limitations and Gaps
+## Limitations and Gaps
 
 One of the most significant limitations of LLMs in chemistry is their struggle with understanding molecular representations in SMILES strings. SMILES (Simplified Molecular Input Line Entry System) is a widely used textual representation for chemical structures. However, LLMs often fail to accurately interpret these strings due to several reasons:
 
@@ -420,19 +420,19 @@ These limitations are evident in tasks requiring precise understanding and gener
 
 Another limitation lies in the paper's reliance on standard NLP metrics such as BLEU and F1 scores to evaluate performance in chemistry tasks. While these metrics are suitable for text-based tasks, they fail to capture the nuances of chemical validity and real-world applicability. For instance, a generated molecule might score well on BLEU but still be chemically invalid. Future work should prioritize developing chemistry-specific evaluation metrics.
 
-### Areas for Improvement
+## Areas for Improvement
 
 The study could benefit from a stronger emphasis on domain-specific pretraining. Many of the observed limitations, such as hallucination in molecule design or low accuracy in reaction prediction, stem from the fact that these LLMs were not explicitly trained on chemical datasets. Incorporating domain-specific knowledge through pretraining or fine-tuning on curated datasets like ChEBI or PubChem could address some of these gaps.
 
 Additionally, the ethical considerations discussed in the paper are timely but somewhat superficial. While the authors mention the dual-use dilemma of AI in chemistry, a more detailed discussion on how to operationalize safeguards, such as integrating real-time toxicity prediction or alert mechanisms, would have added depth.
 
-# Future Directions
+## Future Directions 
 
 This study opens several avenues for future research. First, it highlights the need for interdisciplinary collaboration between AI researchers and chemists to develop models that are not only accurate but also interpretable and reliable. Second, the potential of LLMs to democratize access to advanced chemical analysis tools is immense but requires robust regulatory frameworks to mitigate misuse.
 
 The paper also indirectly points to the need for a paradigm shift in AI evaluation. Instead of treating chemistry tasks as just another domain for NLP techniques, researchers should recognize the unique challenges these tasks present and adapt their methods accordingly.
 
-# Final Thoughts
+## Final Thoughts
 
 While the paper provides a valuable starting point for evaluating LLMs in chemistry, it is clear that these models are far from replacing specialized tools or expert chemists. However, their ability to complement traditional methods—by automating repetitive tasks or generating novel hypotheses—should not be underestimated. With focused development and ethical oversight, LLMs could become indispensable tools in the chemist’s arsenal, driving innovation in drug discovery, material science, and beyond.
 
