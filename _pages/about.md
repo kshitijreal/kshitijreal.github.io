@@ -11,30 +11,30 @@ p {
     text-align: justify;
 }
 </style>
-Introduction
-------
+
+# Introduction
 
 Large Language Models (LLMs) have revolutionized the field of natural language processing, demonstrating impressive capabilities in understanding, generating, and reasoning about text. These models have shown potential in various domains, including science, finance, and software engineering. However, their application in the field of chemistry remains underexplored. This seminar aims to delve into the capabilities of LLMs in chemistry through a comprehensive benchmark evaluation of eight practical chemistry tasks.
 
 This blog explores the potential of LLMs in advancing chemistry research and development. It discusses the benchmarking process, the tasks evaluated, and the performance of five popular LLMs: GPT-4, GPT-3.5, Davinci-003, Llama, and Galactica. By the end of this seminar, insights will be provided into the strengths, weaknesses, and limitations of LLMs in chemistry-related tasks, along with practical recommendations for leveraging these models in the future.
 
-Background on LLMs and Chemistry
-------
+# Background on LLMs and Chemistry
+
 
 Large Language Models (LLMs) have become a cornerstone in the field of natural language processing (NLP), showcasing remarkable abilities to understand, generate, and reason with text. These models, such as GPT-4 and Llama, have not only revolutionized text-based applications but have also begun to make inroads into scientific domains, including chemistry.
 
 example llms-in-chemistry.jpg
 Figure 1: The intersection of LLMs and Chemistry
 
-**The Rise of LLMs**
+## The Rise of LLMs
 
 LLMs have demonstrated their prowess in a variety of tasks, from answering complex questions to generating coherent and contextually relevant text. This has led to their application in diverse fields such as healthcare, where they assist in diagnosing diseases, and in software engineering, where they help generate code. However, their potential in specialized scientific domains like chemistry has only recently started to be explored.
 
-**Chemistry: A New Frontier for LLMs**
+## Chemistry: A New Frontier for LLMs
 
 Chemistry, as a scientific discipline, involves understanding and manipulating molecules, reactions, and materials. Traditionally, this field has relied heavily on experimental methods and specialized computational tools. The advent of LLMs presents an opportunity to augment these traditional methods with powerful AI-driven solutions.
 
-**Challenges in Evaluating LLMs for Chemistry**
+## Challenges in Evaluating LLMs for Chemistry
 
 Despite the potential, evaluating LLMs for chemistry tasks is not straightforward. Chemistry tasks often require a deep understanding of molecular structures, reaction mechanisms, and chemical properties. LLMs, which are primarily trained on natural language data, may struggle with the specialized knowledge and reasoning required for these tasks.
 Moreover, the evaluation of LLMs in chemistry involves several challenges:
@@ -45,21 +45,21 @@ Moreover, the evaluation of LLMs in chemistry involves several challenges:
 
 3. **Data and Evaluation Metrics**: Chemistry datasets are often complex and require specialized metrics for evaluation. Ensuring that LLMs can perform well on these metrics is crucial for their practical application.
 
-**Previous Work**
+## Previous Work
 
 Previous research has shown that LLMs can be applied to specific chemistry tasks, such as predicting molecular properties or generating chemical reactions. However, these studies have been limited in scope, focusing on individual tasks rather than a comprehensive evaluation across multiple tasks.
 
 This seminar aims to fill this gap by providing a comprehensive benchmark evaluation of LLMs across a diverse set of chemistry tasks. The goal is to gain a deeper understanding of the capabilities and limitations of LLMs in the field of chemistry.
 
-The Comprehensive Benchmark
-------
+# The Comprehensive Benchmark
+
 
 To systematically evaluate the capabilities of Large Language Models (LLMs) in chemistry, a comprehensive benchmark was developed to assess their performance across eight diverse chemistry tasks. This benchmark provides a holistic view of how well LLMs can understand, reason, and explain chemistry-related problems. ![Figure 4: Overview of the Comprehensive Benchmark](https://example.com/benchmark-overview.jpg)
 
 https://example.com/benchmark-overview.jpg
 Figure 4: Overview of the Comprehensive Benchmark
 
-**The Eight Chemistry Tasks**
+### The Eight Chemistry Tasks
 
 1. **Name Prediction**: Translating between different chemical naming conventions, such as SMILES to IUPAC names.
 
@@ -378,7 +378,7 @@ These limitations are evident in tasks requiring precise understanding and gener
 
 **Impact of In-Context Learning**
 
-Our experiments highlight the significant impact of in-context learning (ICL) on the performance of LLMs. Providing a few examples as context can significantly enhance the models' ability to perform chemistry tasks. For instance, in the property prediction task, GPT-4 achieved an F1 score of 0.797 on the HIV dataset when provided with context, compared to 0.977 without context.
+The experiments highlight the significant impact of in-context learning (ICL) on the performance of LLMs. Providing a few examples as context can significantly enhance the models' ability to perform chemistry tasks. For instance, in the property prediction task, GPT-4 achieved an F1 score of 0.797 on the HIV dataset when provided with context, compared to 0.977 without context.
 
 The quality and quantity of ICL examples play a crucial role in improving performance. Using scaffold similarity to retrieve the most relevant examples often outperforms random sampling. Additionally, increasing the number of ICL examples generally leads to better results, as seen in the yield prediction task.
 
@@ -388,7 +388,7 @@ The potential for LLMs to generate chemically valid molecules raises ethical con
 
 **Broader Impacts and Future Work**
 
-Our comprehensive benchmark provides valuable insights into the capabilities and limitations of LLMs in chemistry. The findings suggest that while LLMs can perform competitively in some tasks, they still lag behind specialized models in others. Future research should focus on improving LLMs' understanding of molecular structures and developing more effective in-context learning strategies.
+The comprehensive benchmark provides valuable insights into the capabilities and limitations of LLMs in chemistry. The findings suggest that while LLMs can perform competitively in some tasks, they still lag behind specialized models in others. Future research should focus on improving LLMs' understanding of molecular structures and developing more effective in-context learning strategies.
 
 Additionally, there is a need for more chemistry-specific evaluation metrics that can accurately assess the performance of LLMs in generating and understanding chemical structures. Collaborative efforts between AI researchers and chemists will be essential in advancing the application of LLMs in chemistry.
 
