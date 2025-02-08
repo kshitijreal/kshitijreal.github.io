@@ -54,7 +54,8 @@ This seminar aims to fill this gap by providing a comprehensive benchmark evalua
 The Comprehensive Benchmark
 ------
 
-To systematically evaluate the capabilities of Large Language Models (LLMs) in chemistry, we developed a comprehensive benchmark that assesses their performance across eight diverse chemistry tasks. This benchmark aims to provide a holistic view of how well LLMs can understand, reason, and explain chemistry-related problems.
+To systematically evaluate the capabilities of Large Language Models (LLMs) in chemistry, a comprehensive benchmark was developed to assess their performance across eight diverse chemistry tasks. This benchmark provides a holistic view of how well LLMs can understand, reason, and explain chemistry-related problems. ![Figure 4: Overview of the Comprehensive Benchmark](https://example.com/benchmark-overview.jpg)
+
 https://example.com/benchmark-overview.jpg
 Figure 4: Overview of the Comprehensive Benchmark
 
@@ -80,7 +81,7 @@ Each task is designed to test different aspects of LLMs' capabilities, from basi
 
 **Datasets and Evaluation Metrics**
 
-To ensure a fair and comprehensive evaluation, we utilized widely recognized datasets such as BBBP, Tox21, PubChem, USPTO, and ChEBI. These datasets provide a rich variety of chemistry problems, ranging from molecular property prediction to reaction yield estimation.
+To ensure a fair and comprehensive evaluation, widely recognized datasets such as BBBP, Tox21, PubChem, USPTO, and ChEBI were utilized. These datasets provide a rich variety of chemistry problems, ranging from molecular property prediction to reaction yield estimation.
 
 | Ability       | Task                          | Task Type        | Dataset                                              | #ICL candidates     | #test | Evaluation Metrics           |
 |---------------|-------------------------------|------------------|-----------------------------------------------------|---------------------|-------|------------------------------|
@@ -94,11 +95,11 @@ To ensure a fair and comprehensive evaluation, we utilized widely recognized dat
 | **Explaining**    | Molecule Captioning            | Generation       | ChEBI-20                                           | 26407               | 100   | BLEU, Chemists, etc.         |
 
 
-For evaluation, we employed metrics tailored to each task. For example, accuracy and F1 score were used for classification tasks like property prediction, while BLEU and exact match were used for text generation tasks like molecule captioning.
+For evaluation, metrics tailored to each task were employed. For example, accuracy and F1 score were used for classification tasks like property prediction, while BLEU and exact match were used for text generation tasks like molecule captioning.
 
 **LLMs Evaluated**
 
-We evaluated five popular LLMs: GPT-4, GPT-3.5, Davinci-003, Llama, and Galactica. These models were tested in both zero-shot and few-shot in-context learning settings to understand their performance with varying levels of context.
+Five popular LLMs were evaluated: GPT-4, GPT-3.5, Davinci-003, Llama, and Galactica. These models were tested in both zero-shot and few-shot in-context learning settings to understand their performance with varying levels of context.
 
 ### Benchmark Process
 
@@ -110,11 +111,11 @@ The benchmark process involved several steps:
 
 3. **Evaluation**: Running multiple trials to ensure reliable results, considering the randomness in LLM outputs.
 
-By following this structured approach, we aimed to provide a reliable and systematic evaluation of LLMs' capabilities in chemistry.
+This structured approach was designed to provide a reliable and systematic evaluation of LLMs’ capabilities in chemistry.
 
 ## Evaluation of LLMs
 
-In this section, we delve into the performance of the five Large Language Models (LLMs) evaluated in our comprehensive benchmark. The models—GPT-4, GPT-3.5, Davinci-003, Llama, and Galactica—were tested across eight chemistry tasks in both zero-shot and few-shot in-context learning settings. Our goal was to understand their capabilities and limitations in the context of practical chemistry problems.
+This section delves into the performance of five Large Language Models (LLMs) evaluated in the comprehensive benchmark. The models—GPT-4, GPT-3.5, Davinci-003, Llama, and Galactica—were tested across eight chemistry tasks in both zero-shot and few-shot in-context learning settings. The goal was to understand their capabilities and limitations in the context of practical chemistry problems.
 
 ![Evaluation overview](_pages\images\eval_overview.png "Overview of the evaluation process")
 Overview of the Evaluation Process
@@ -125,7 +126,7 @@ Zero-shot learning involves evaluating the LLMs without providing any examples, 
 
 ### Performance Metrics
 
-We used a variety of metrics to evaluate the models, tailored to each task. For classification tasks like property prediction, we used accuracy and F1 score. For text generation tasks like molecule captioning, we used BLEU, exact match, and other natural language processing metrics. These metrics helped us assess both the qualitative and quantitative performance of the LLMs.
+A variety of metrics were used to evaluate the models, tailored to each task. For classification tasks like property prediction, accuracy and F1 score were used. For text generation tasks like molecule captioning, BLEU, exact match, and other natural language processing metrics were applied. These metrics helped assess both the qualitative and quantitative performance of the LLMs.
 
 ### Key Findings
 
@@ -144,7 +145,7 @@ We used a variety of metrics to evaluate the models, tailored to each task. For 
 
 ## Detailed Analysis of Each Task
 
-In this section, we provide a detailed analysis of the performance of the five LLMs across each of the eight chemistry tasks. This analysis will help us understand the strengths and weaknesses of these models in specific chemistry-related problems.
+This section provides a detailed analysis of the performance of five LLMs across each of the eight chemistry tasks. This analysis helps in understanding the strengths and weaknesses of these models in specific chemistry-related problems.
 
 ### Name Prediction
 
@@ -175,7 +176,7 @@ In this section, we provide a detailed analysis of the performance of the five L
 
 ### Property Prediction
 
-**Task Description**: Property prediction involves predicting chemical and physical properties of molecules based on their structure. We used datasets like BBBP, HIV, BACE, Tox21, and ClinTox.
+**Task Description**: Property prediction involves predicting chemical and physical properties of molecules based on their structure. Datasets like BBBP, HIV, BACE, Tox21, and ClinTox were used.
 
 **Results:**
 
@@ -361,7 +362,7 @@ In this section, we provide a detailed analysis of the performance of the five L
 
 ### Discussion and Insights
 
-In this section, we delve into the broader implications of our findings, discuss the limitations of current LLMs in chemistry tasks, and explore potential avenues for future research and development.
+This section delves into the broader implications of the findings, discusses the limitations of current LLMs in chemistry tasks, and explores potential avenues for future research and development.
 
 **Limitations of LLMs in Understanding Molecular SMILES**
 
