@@ -16,7 +16,7 @@ Introduction
 
 Large Language Models (LLMs) have revolutionized the field of natural language processing, demonstrating impressive capabilities in understanding, generating, and reasoning about text. These models have shown potential in various domains, including science, finance, and software engineering. However, their application in the field of chemistry remains underexplored. This seminar aims to delve into the capabilities of LLMs in chemistry through a comprehensive benchmark evaluation of eight practical chemistry tasks.
 
-In this blog, we will explore the potential of LLMs in advancing chemistry research and development. We will discuss the benchmarking process, the tasks evaluated, and the performance of five popular LLMs: GPT-4, GPT-3.5, Davinci-003, Llama, and Galactica. By the end of this seminar, you will gain insights into the strengths, weaknesses, and limitations of LLMs in chemistry-related tasks, as well as practical recommendations for leveraging these models in the future.
+This blog explores the potential of LLMs in advancing chemistry research and development. It discusses the benchmarking process, the tasks evaluated, and the performance of five popular LLMs: GPT-4, GPT-3.5, Davinci-003, Llama, and Galactica. By the end of this seminar, insights will be provided into the strengths, weaknesses, and limitations of LLMs in chemistry-related tasks, along with practical recommendations for leveraging these models in the future.
 
 Background on LLMs and Chemistry
 ------
@@ -49,7 +49,7 @@ Moreover, the evaluation of LLMs in chemistry involves several challenges:
 
 Previous research has shown that LLMs can be applied to specific chemistry tasks, such as predicting molecular properties or generating chemical reactions. However, these studies have been limited in scope, focusing on individual tasks rather than a comprehensive evaluation across multiple tasks.
 
-This seminar aims to fill this gap by providing a comprehensive benchmark evaluation of LLMs across a diverse set of chemistry tasks. By doing so, we hope to gain a deeper understanding of the capabilities and limitations of LLMs in the field of chemistry.
+This seminar aims to fill this gap by providing a comprehensive benchmark evaluation of LLMs across a diverse set of chemistry tasks. The goal is to gain a deeper understanding of the capabilities and limitations of LLMs in the field of chemistry.
 
 The Comprehensive Benchmark
 ------
