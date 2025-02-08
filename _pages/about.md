@@ -20,11 +20,12 @@ This blog explores the potential of LLMs in advancing chemistry research and dev
 
 # Background on LLMs and Chemistry
 
-
 Large Language Models (LLMs) have become a cornerstone in the field of natural language processing (NLP), showcasing remarkable abilities to understand, generate, and reason with text. These models, such as GPT-4 and Llama, have not only revolutionized text-based applications but have also begun to make inroads into scientific domains, including chemistry.
 
-example llms-in-chemistry.jpg
-Figure 1: The intersection of LLMs and Chemistry
+![LLM and Chemistry Intergration](_pages\images\chem_llm.png "Integration of Chemistry and LLM")
+
+<div style="text-align: center;">Figure 1: The intersection of LLMs and Chemistry</div>
+
 
 ## The Rise of LLMs
 
